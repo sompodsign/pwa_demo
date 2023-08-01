@@ -6,7 +6,7 @@
   "background_color": "#c4caf8",
   "display": "standalone",
   "orientation": "portrait",
-  "start_url": "/",
+  "start_url": "pwa-demo/",
   "icons": [
     {
       "src": "https://stg.anymind360.com/site/3818/pwa/manifest/icon_192.png",
