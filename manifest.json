@@ -6,7 +6,7 @@
   "background_color": "",
   "display": "standalone",
   "orientation": "portrait",
-  "start_url": "http://127.0.0.1:53701",
+  "start_url": "https://sompodsign.github.io/pwa_demo/",
   "icons": [
     {
       "src": "https://stg.anymind360.com/site/3818/pwa/manifest/icon_192.png",
