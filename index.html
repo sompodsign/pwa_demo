@@ -1,14 +1,128 @@
-<!--create a sample html fil-->
 
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Progressive Web App</title>
-    <link rel="manifest" href="manifest.json">
+    <title>PWA TEST SITE </title>
+    <meta name="theme-color" content="#DE6202">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="robots" content="noindex">
+    <link rel="manifest" href="/manifest.json">
+    
+    <meta name="description" content="PWA Demo Site">
+    <meta name="date" content="03/04/2021">
+    <meta name="author" content="AnyManager">
+    <meta property="og:image" content="https://stg.pwa.ada.machrouhi.com/768x1024-34.png">
+
+    <script type="application/javascript" src="//anymind360.com/js/3818/pwa.js"></script>
+    <!-- <script type="application/javascript" src="/ats.js"></script> -->
+
+    <style type="text/css">
+        a {
+            display: block;
+            font-style: normal;
+            text-decoration: none;
+            background: #EEF;
+            color: black;
+            width: 100px;
+            margin: 5px auto;
+            text-align: center;
+            padding: 5px 15px;
+            border-radius: 5px;
+        }
+    </style>
 </head>
-<body>
-    <h1>Progressive Web App</h1>
-    <p>Progressive Web Apps are web apps that use emerging web browser APIs and features along with traditional progressive enhancement strategy to bring a native app-like user experience to cross-platform web applications.</p>
+<body style="background-color: green;">
+	<h1>PWA Test site</h1>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Solum praeterea formosum, solum liberum, solum civem, stultost; Duo Reges: constructio interrete. Quid, quod homines infima fortuna, nulla spe rerum gerendarum, opifices denique delectantur historia? Eam si varietatem diceres, intellegerem, ut etiam non dicente te intellego; Bonum valitudo: miser morbus.</p>
+
+	<p>Quid Zeno? At hoc in eo M. Scrupulum, inquam, abeunti; Hoc loco tenere se Triarius non potuit. Nunc dicam de voluptate, nihil scilicet novi, ea tamen, quae te ipsum probaturum esse confidam. Tum Triarius: Posthac quidem, inquit, audacius. Quae cum magnifice primo dici viderentur, considerata minus probabantur. Vitiosum est enim in dividendo partem in genere numerare. Quid, quod res alia tota est? Num igitur eum postea censes anxio animo aut sollicito fuisse?</p>
+
+	<div id="pwa_a2hs_nativ_test"></div>
+
+	<p>Sapiens autem semper beatus est et est aliquando in dolore; Quae cum praeponunt, ut sit aliqua rerum selectio, naturam videntur sequi; Scrupulum, inquam, abeunti; Cupiditates non Epicuri divisione finiebat, sed sua satietate. Quae cum dixisset paulumque institisset, Quid est? Deinde qui fit, ut ego nesciam, sciant omnes, quicumque Epicurei esse voluerunt? Experiamur igitur, inquit, etsi habet haec Stoicorum ratio difficilius quiddam et obscurius. Fatebuntur Stoici haec omnia dicta esse praeclare, neque eam causam Zenoni desciscendi fuisse. An eum locum libenter invisit, ubi Demosthenes et Aeschines inter se decertare soliti sunt? Verum tamen cum de rebus grandioribus dicas, ipsae res verba rapiunt; Contemnit enim disserendi elegantiam, confuse loquitur. Satisne vobis videor pro meo iure in vestris auribus commentatus?</p>
+
+	<a href="test-link.html">Test Link</a>
+	<a href="test-link-2.html">Test Link</a>
+	<br>
+
+	<a onclick="window.location.reload(true);">Refresh</a>
+
+	<p>Cum autem in quo sapienter dicimus, id a primo rectissime dicitur. ALIO MODO. Nihil sane. Cave putes quicquam esse verius. A quibus propter discendi cupiditatem videmus ultimas terras esse peragratas. Nosti, credo, illud: Nemo pius est, qui pietatem-; Ut non sine causa ex iis memoriae ducta sit disciplina. Ostendit pedes et pectus. Sed residamus, inquit, si placet.</p>
+
+	<div style="opacity: 1;">
+		<p style="text-align: center;">################::TEST--</p>
+		<div id="console_log_test"> </div>
+		<p style="text-align: center;">################::TEST</p>
+		<div id="cookies_list"></div>
+	</div>
+
+
+	<script type="text/javascript">
+        (function () {
+            var logger = document.getElementById('console_log_test');
+
+            var old = console.log;
+            console.log = function (message) {
+                if (typeof message == 'object') {
+                    logger.innerHTML += 'LOG::#::' + (JSON && JSON.stringify ? JSON.stringify(message) : message) + '<br />';
+                } else {
+                    logger.innerHTML += 'LOG::#::' + message + '<br />';
+                }
+            }
+
+            var old_console_error = console.error;
+            console.error = function (message) {
+                if (typeof message == 'object') {
+                    logger.innerHTML += 'ERROR::#::' + (JSON && JSON.stringify ? JSON.stringify(message) : message) + '<br />';
+                } else {
+                    logger.innerHTML += 'ERROR::#::' + message + '<br />';
+                }
+            }
+
+            var old_console_warn = console.warn;
+            console.warn = function (message) {
+                if (typeof message == 'object') {
+                    logger.innerHTML += 'WARNING::#::' + (JSON && JSON.stringify ? JSON.stringify(message) : message) + '<br />';
+                } else {
+                    logger.innerHTML += 'WARNING::#::' + message + '<br />';
+                }
+            }
+
+            console.log('######::TESTTEST--');
+
+            console.log('######::pwaUserFCMToken::' + window.localStorage.getItem("am:pwaUserFCMToken"));
+        })();
+
+        window.onerror = function(e){
+            document.getElementById('console_log_test').innerHTML += e.toString() + '<br />';
+        }
+
+        function listCookies() {
+            var theCookies = document.cookie.split(';');
+            var aString = '';
+            for (var i = 1 ; i <= theCookies.length; i++) {
+                aString += i + ': ' + theCookies[i-1] + "<br>";
+            }
+            return aString;
+        }
+
+        document.getElementById("cookies_list").innerHTML = listCookies();
+
+        var userAgent = window.navigator.userAgent.toLowerCase();
+        document.getElementById('console_log_test').innerHTML += userAgent + '<br />';
+
+        var isChrome = navigator.userAgent.match(/chrome|chromium|crios/i);
+        if ( isChrome ) {
+            document.getElementById('console_log_test').innerHTML += '##CHROME<br />';
+        } else {
+            document.getElementById('console_log_test').innerHTML += '##NOT CHROME<br />';
+        }
+
+	</script>
+
+	<!-- <script type="application/javascript" src="/ats.js"></script> -->
+
 </body>
 </html>
