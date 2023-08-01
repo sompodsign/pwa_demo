@@ -5,7 +5,7 @@
   "theme_color": "#2196F3",
   "background_color": "#FFFFFF",
   "display": "standalone",
-  "start_url": "/index.html",
+  "start_url": "https://sompodsign.github.io/pwa_demo/",
   "icons": [
     {
       "src": "/icons/icon-72x72.png",
