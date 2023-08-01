@@ -1,8 +1,8 @@
 {
-  "name": "PWA Test Site for Testing",
-  "short_name": "AM PWA PROD",
-  "description": "This site is for testing purposes of PWA test test test test test test test test test test test test",
-  "theme_color": "#00bfff",
+  "name": "Shampad PWA testing",
+  "short_name": "Shampad PWA",
+  "description": "Test Site",
+  "theme_color": "#c4caf8",
   "background_color": "#c4caf8",
   "display": "standalone",
   "orientation": "portrait",
