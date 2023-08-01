@@ -1,0 +1,88 @@
+{
+  "name": "Shampad PWA",
+  "short_name": "PWA Sh",
+  "description": "LOL",
+  "theme_color": "",
+  "background_color": "",
+  "display": "standalone",
+  "orientation": "portrait",
+  "start_url": "http://127.0.0.1:53701",
+  "icons": [
+    {
+      "src": "https://stg.anymind360.com/site/3818/pwa/manifest/icon_192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "https://stg.anymind360.com/site/3818/pwa/manifest/icon_168.png",
+      "type": "image/png",
+      "sizes": "168x168"
+    },
+    {
+      "src": "https://stg.anymind360.com/site/3818/pwa/manifest/icon_144.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "https://stg.anymind360.com/site/3818/pwa/manifest/icon_96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "https://stg.anymind360.com/site/3818/pwa/manifest/icon_72.png",
+      "type": "image/png",
+      "sizes": "72x72"
+    },
+    {
+      "src": "https://stg.anymind360.com/site/3818/pwa/manifest/icon_48.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    }
+  ],
+  "splash_screen": [
+    {
+      "src": "https://stg.anymind360.com/site/3818/pwa/manifest/splash_screen_1242_2688.png",
+      "media": "(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)"
+    },
+    {
+      "src": "https://stg.anymind360.com/site/3818/pwa/manifest/splash_screen_1125_2436.png",
+      "media": "(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)"
+    },
+    {
+      "src": "https://stg.anymind360.com/site/3818/pwa/manifest/splash_screen_1242_2208.png",
+      "media": "(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3)"
+    },
+    {
+      "src": "https://stg.anymind360.com/site/3818/pwa/manifest/splash_screen_750_1334.png",
+      "media": "(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)"
+    },
+    {
+      "src": "https://stg.anymind360.com/site/3818/pwa/manifest/splash_screen_2048_2732.png",
+      "media": "(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)"
+    },
+    {
+      "src": "https://stg.anymind360.com/site/3818/pwa/manifest/splash_screen_1668_2224.png",
+      "media": "(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)"
+    },
+    {
+      "src": "https://stg.anymind360.com/site/3818/pwa/manifest/splash_screen_640_1136.png",
+      "media": "(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)"
+    },
+    {
+      "src": "https://stg.anymind360.com/site/3818/pwa/manifest/splash_screen_1668_2388.png",
+      "media": "(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)"
+    },
+    {
+      "src": "https://stg.anymind360.com/site/3818/pwa/manifest/splash_screen_1536_2048.png",
+      "media": "(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)"
+    },
+    {
+      "src": "https://stg.anymind360.com/site/3818/pwa/manifest/splash_screen_828_1792.png",
+      "media": "(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)"
+    }
+  ],
+  "author": {
+    "name": "AnyManager Team",
+    "website": "https://app.anymanager.io"
+  }
+}
